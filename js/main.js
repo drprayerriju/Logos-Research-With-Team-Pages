@@ -281,9 +281,8 @@ function displayVerifyError(container) {
 }
 
 // Brochure Download Handler
-function handleBrochureDownload(filename) {
-  // In production, link to actual PDF files
-  alert(`Download: ${filename}\n\nNote: Please upload actual PDF files to your server.`);
+function handleBrochureDownload(filePath) {
+  window.open(filePath, "_blank");
 }
 
 // Initialize on DOM ready
